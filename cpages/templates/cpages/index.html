@@ -1,0 +1,446 @@
+﻿{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>Technology Consultants</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">}">
+<link rel="stylesheet" type="text/css" href="{% static 'style4.css' %}">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kalam", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1{background-position: center;background-size: cover;background-image:url({% static 'waves.png' %});min-height: 100%;}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+/* images */
+.analytic-b{background-position: center;background-size: cover;background-image:url({% static 'wirebrain.jpg' %});min-height: 60%;}
+.app-b{background-position: center;background-size: cover;background-image:url({% static 'wavnum.jpg' %});min-height: 60%;}
+.cloud-b{background-position: center;background-size: cover;background-image:url({% static 'hybridcloud.jpg' %});min-height: 60%;}
+.sec-b{background-position: center;background-size: cover;background-image:url({% static 'sec2.jpg' %});min-height: 60%;}
+.bpm-b{background-position: center;background-size: cover;background-image:url({% static 'wavnum.jpg' %});min-height: 60%;}
+.dt-b{background-position: center;background-size: cover;background-image:url({% static 'wavnum.jpg' %});min-height: 60%;}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">exponentify</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="#industry" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> INDUSTRIES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#career" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CAREERS</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+  <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="#industry" onclick="w3_close()" class="w3-bar-item w3-button">INDUSTRIES</a>
+  <a href="#career" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#analytic" onclick="w3_close()" class="w3-bar-item w3-button">Analytics</a>
+  <a href="#sysapp" onclick="w3_close()" class="w3-bar-item w3-button">Systems and Applications</a>
+  <a href="#auto" onclick="w3_close()" class="w3-bar-item w3-button">Automation</a>
+  <a href="#cloud" onclick="w3_close()" class="w3-bar-item w3-button">Cloud</a>
+  <a href="#sec" onclick="w3_close()" class="w3-bar-item w3-button">Security</a>
+  <a href="#bus" onclick="w3_close()" class="w3-bar-item w3-button">Business Process Management</a>
+  <a href="#agile" onclick="w3_close()" class="w3-bar-item w3-button">Agile & Digital Transformation</a>
+  
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:30px">
+    <span class="w3-jumbo w3-hide-small" >Let's traverse the waves of growth together.</span><br>
+<span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+    <br><br><br><b><p>     Exponentify your technologies. Exponentify your force. Exponentify..</p><br>
+    <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Let's collaborate</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- PROMO SECTION -->
+<div class="w3-container" style="padding:128px 16px">
+  <h3 class="w3-center">Our Vision</h3>
+  <p>Conceived on the principles of think, plan, and create, we support our clients in growing and adapting in all aspects of their digital and process transformations. We believe if it can be thought, then it can be planned, created, tested, and delivered to meet expectations. 
+  We focus on providing scalable solutions in an era of rapidly transforming technologies.</p><p> We help clients with functional expertise and implementing stratigic solutions. </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Discover</p>
+      <img src="{% static 'discover.jpg' %}" alt="discover" style="width:80%" height="130">
+      <p>Discover new possibilities and embrace change to transform</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <img src="{% static 'thinking.jpg' %}" alt="design" style="width:80%" height="130">
+      <p>Design strategies and innovative solutions to meet demand</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Develop</p>
+      <img src="{% static 'compapp.jpeg' %}" alt="develop" style="width:80%" height="130">
+      <p>Develop agile processes and applications</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Deliver</p>
+      <img src="{% static 'Results.jpg' %}" alt="deliver" style="width:80%" height="130">
+      <p>Deliver enhancements to invest in growth</p>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="service">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Explore our core competencies:</h3>
+      <p><a href="#analytic" class="w3-button w3-black"><i class="fa fa-th"> </i> Analytics</a></p>
+      <p><a href="#sysapp" class="w3-button w3-black"><i class="fa fa-th"> </i> Applications</a></p>
+      <p><a href="#cloud" class="w3-button w3-black"><i class="fa fa-th"> </i> Cloud</a></p>
+      <p><a href="#sec" class="w3-button w3-black"><i class="fa fa-th"> </i> Cybersecurity</a></p>
+      <p><a href="#bus" class="w3-button w3-black"><i class="fa fa-th"> </i> Business Process Management</a></p>
+      <p><a href="#agile" class="w3-button w3-black"><i class="fa fa-th"> </i> Agile & Digital Transformation</a></p>
+    </div>
+
+    <div class="w3-col s5">
+    <br>
+      <P><img class="w3-image w3-round-large" src="{% static 'collaborate.jpg' %}" alt="collaborate" width="300" height="250"></p>
+      <h3>We have the skill.</h3>
+      <p>Lets exponentify your business! </p><br>
+      
+    </div>
+      
+  </div>
+</div>
+
+<!-- INDUSTRIES -->
+<div class="w3-container" style="padding:128px 16px" id="industry">
+  <h3 class="w3-center">Our people engage with organzations in various specializations to uncover insghts from data, processes, and services to improve the quality and growth of businesses.</h3>
+  <p class="w3-center w3-large">Some industries we serve:</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="{% static 'med1.png' %}" alt="health" style="width:100%" height="130">
+        <div class="w3-container">
+          <h3>Healthcare</h3>
+          <p class="w3-opacity">Transform care</p>
+          <p>Develop and integrate solutions across heathcare systems, applications, and business processes. </p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> ...</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="{% static 'finance.jpg' %}" alt="finance" style="width:100%" height="130">
+        <div class="w3-container">
+          <h3>Financial</h3>
+          <p class="w3-opacity">Transform risk</p>
+          <p>Develop and integrate solutions across financial and banking systems, applications, and processes.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>...</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="{% static 'grid.jpg' %}" alt="energy" style="width:100%" height="130">
+        <div class="w3-container">
+          <h3>Energy</h3>
+          <p class="w3-opacity">Transform power</p>
+          <p>Develop and integrate solutions across exploration and production systems, applications, and processes.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> ...</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="{% static 'hightech.jpg' %}" alt="tech" style="width:100%" height="130">
+        <div class="w3-container">
+          <h3>Technology</h3>
+          <p class="w3-opacity">Transform digitally</p>
+          <p>Develop and integrate solutions across information technology regardless of industry</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> ...</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--SERVICES DETAIL-->
+<header class="analytic-b w3-display-container w3-light-grey" id="analytic">
+  <div class="w3-display-right w3-text-white" style="padding:30px">
+    <span class="w3-xxlarge w3-hide-small">Evolve your Analytics</span><br>
+  </div>
+</header>
+<div class="w3-display-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    <div class="w3-xlarge">Advance, innovate, transform</div><p>Our Data Scientists, Data Engineers<br>Business Intelligence Consultants help clients in:<br>
+    <br>__Big Data Management<br>__Machine Learning<br>__Natural Language Processing<br>__Predictive Analytics<br>__Internet of Things</p>
+      
+    </div>
+
+    <div>
+     <img class="w3-image w3-round-large" src="{% static 'analyticsd.jpg' %}" alt="analytics" width="50%" height="50%">
+    </div>
+      
+  </div>
+</div>
+
+<header class="app-b w3-display-container" id="sysapp">
+  <div class="w3-display-right w3-text-white" style="padding:30px">
+    <span class="w3-xxlarge w3-hide-small"><br>Evolve your Applications</span><br>
+  </div>
+</header>
+<div class="w3-display-container" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    <div class="w3-xlarge">Advance, innovate, transform</div><p>Our Application architects, Programmers,<br>QA Analysts help clients create applications that are:<br>
+    <br>__Real time<br>__Event based<br>__Data driven<br>__Experience driven<br>__User friendly</p>
+      
+    </div>
+
+    <div>
+     <img class="w3-image w3-round-large" src="{% static 'app2.jpg' %}" alt="appcycle" width="50%" height="50%">
+    </div>
+      
+  </div>
+</div>
+
+
+<header class="cloud-b w3-display-container w3-light-grey" id="cloud">
+  <div class="w3-display-right w3-text-white" style="padding:30px">
+    <span class="w3-xxlarge w3-hide-small"><br>Evolve to the Cloud</span><br>
+  </div>
+</header>
+<div class="w3-display-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    <div class="w3-xlarge">Advance, innovate, transform</div><p>Our Cloud Engineers, Cloud Architects,<br>Vitualization consultants help clients implement and manage clouds that are:<br>
+    <br>__Hybrid<br>__Private<br>__Public<br>__Distributed<br>__High-Performance</p>
+      
+    </div>
+
+    <div>
+     <img class="w3-image w3-round-large" src="{% static 'date-migration.png' %}" alt="cloudprocess" width="50%" height="50%">
+    </div>
+      
+  </div>
+</div>
+
+
+<header class="sec-b w3-display-container" id="sec">
+  <div class="w3-display-right w3-text-white" style="padding:30px">
+    <span class="w3-xxlarge w3-hide-small"><br>Evolve Cybersecurity</span><br>
+  </div>
+</header>
+<div class="w3-display-container" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    <div class="w3-xlarge">Advance, innovate, transform</div><p>Next generation technology needs next generation security. Our Security Engineers help clients secure cloud services, applications, IoT devices, and components of decentralized information systems focusing on:<br>
+    <br>__Security Strategy<br>__Prevention<br>__Protection</p>
+      
+    </div>
+
+
+
+    <div>
+     <img class="w3-image w3-round-large" src="{% static 'secte.jpg' %}" alt="cloudprocess" width="50%" height="50%">
+    </div>
+      
+  </div>
+</div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="bus">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+    <h3>Business Process Management</h3>
+    <p>BPM ..<br></p><br>
+    <img class="w3-image w3-round-large" src="{% static 'fast.jpg' %}" alt="fast" width="500" height="300">
+  </div>
+</div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="agile">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+    <h3>Digital Transformation Support</h3>
+    <p>DT ..<br></p><br>
+    <img class="w3-image w3-round-large" src="{% static 'fast.jpg' %}" alt="fast" width="500" height="300">
+  </div>
+</div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">About A</h3>
+  <p class="w3-center w3-large">A is a US based information technology and business process management consulting company that 
+  specializes in supporting businesses transform digitally, technologically, and financially.</p>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Houston, TX USA</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="{% static 'env.jpg' %}" alt="envelope" width="300" height="300">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
