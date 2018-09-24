@@ -1,2 +1,1 @@
-gunicorn consultsite.wsgi:application
-web: gunicorn consultsite.wsgi --access-logfile -
+web: python consultsite/manage.py run_gunicorn --bind=0.0.0.0:$PORT
