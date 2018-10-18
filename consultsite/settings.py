@@ -55,7 +55,7 @@ ROOT_URLCONF = 'consultsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,6 +114,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+#email config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'salma.ali@exponentify.com'
+EMAIL_HOST_PASSWORD = 'Arifa@29'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

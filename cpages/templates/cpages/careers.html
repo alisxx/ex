@@ -1,0 +1,26 @@
+﻿{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}Contact Us{% endblock %}
+
+
+{% block content %}
+<style>
+.crr-b{background-position: center;background-size: cover;background-image:url({% static 'careerladder.jpg' %});}
+</style>
+
+<!-- Contact Section -->
+<br><br><br><br>
+<div><header class="crr-b s-display-container" style="padding:128px 16px" width="100%" height="300"  id="contact">
+  <div class="s-display-left s-text-white" style="padding:30px">
+    <span class="s-xxlarge s-hide-small"><br><br><br>Join us</span><br>
+  </div>
+</header></div>
+<div class="s-container p-center s left" id="contact">
+  <h1 class="s-text-skyblue">Become part of a growing team ...</h1>
+  <p class="s-xlarge">We are hiring for various roles in IT, engineering, and business mangement </p><br<p class="s-xlarge"> Please send your resume to:</p>
+  <p class="s-xlarge s-text-greenr"> Email:  hr@exponentify.com<br><br></p>
+
+      <br>
+</div>
+{% endblock %}

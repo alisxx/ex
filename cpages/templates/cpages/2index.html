@@ -1,36 +1,96 @@
-﻿{% extends "base.html" %}
-{% load static from staticfiles %}
-
-{% block title %}exponentify{% endblock %}
-
-{% block content %}
-
+﻿{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>exponentify technologies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style4.css' %}">
 <style>
 
-/* images */
+body, html {
+    height: 90%;
+    line-height: 1.3;
+}
+/* Full height image header */
 .bgimg-1{background-position: center;background-size: cover;background-image:url({% static 'ab_top.jpg' %});min-height: 100%;}
+.s-bar .s-button {
+    padding: 16px;
+}
+/* images */
 .analytic-b{background-position: center;background-size: cover;background-image:url({% static 'wirebrain.jpg' %});min-height: 60%;}
 .app-b{background-position: center;background-size: cover;background-image:url({% static 'wavnum.jpg' %});min-height: 60%;}
 .cloud-b{background-position: center;background-size: cover;background-image:url({% static 'hybridcloud.jpg' %});min-height: 60%;}
 .sec-b{background-position: center;background-size: cover;background-image:url({% static 'sec2.jpg' %});min-height: 60%;}
 .bpm-b{background-position: center;background-size: cover;background-image:url({% static 'web.jpg' %});min-height: 60%;}
-.dt-b{background-position: center;background-size:100%;background-image:url({% static 'nano.jpg' %});min-height: 60%;}
+.dt-b{background-position: center;background-size: cover;background-image:url({% static 'nano.jpg' %});min-height: 60%;}
 .loc-b{background-position: center;background-size: cover;background-image:url({% static 'gridbuilding.jpg' %});min-height: 60%;}
-
-
+.con-b{background-position: center;background-size: cover;background-image:url({% static 'bigred.png' %});min-height: 60%;}
 </style>
 
+<body>
 
+<!-- Navbar (sit on top) -->
+
+<div class="navbar s-white">
+
+   <a href="#home"><p><img class="logo-img" 
+    src="{% static 'logo1.jpg' %}" alt="explogo"></a>
+
+
+    <!-- Right-sided navbar links -->
+       <ul id="nav-links">
+                <li><a href="#service">SERVICES</a>
+
+                </li>
+                <li><a href="#industry">INDUSTRIES</a>
+
+                </li>
+                <li><a href="contact.html">CONTACT</a>
+
+                </li>
+                <li><a href="#about">ABOUT</a>
+                
+                 </li>
+                <li><a href="#career">CAREERS</a>
+
+                </li>
+            </ul>
+
+</p>
+
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="s-sidebar s-bar-block s-light-blue s-card s-animate-left s-hide-medium s-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="s-bar-item s-button s-large s-padding-16">Close ×</a>
+
+
+  <a href="#service" onclick="w3_close()" class="s-bar-item s-button">SERVICES</a>
+  <a href="#industry" onclick="w3_close()" class="s-bar-item s-button">INDUSTRIES</a>
+  <a href="#career" onclick="w3_close()" class="s-bar-item s-button">CAREERS</a>
+  <a href="#contact" onclick="w3_close()" class="s-bar-item s-button">CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="s-bar-item s-button">ABOUT</a>
+  <a href="#analytic" onclick="w3_close()" class="s-bar-item s-button">Analytics</a>
+  <a href="#sysapp" onclick="w3_close()" class="s-bar-item s-button">Systems and Applications</a>
+  <a href="#auto" onclick="w3_close()" class="s-bar-item s-button">Automation</a>
+  <a href="#cloud" onclick="w3_close()" class="s-bar-item s-button">Cloud</a>
+  <a href="#sec" onclick="w3_close()" class="s-bar-item s-button">Security</a>
+  <a href="#bus" onclick="w3_close()" class="s-bar-item s-button">Business Process Management</a>
+  <a href="#agile" onclick="w3_close()" class="s-bar-item s-button">Digital Transformation</a>
+    <a href="#learn" onclick="w3_close()" class="s-bar-item s-button">VISION</a>
+</nav>
+<br><br>
 <!-- Header with full-height image -->
 
 <header class="bgimg-1" id="home">
 <div class="s-display-container s-display-left s-text-white" style="padding:30px">
 
-    <br><span class="s-xxlarge s-hide-small" ><br>Exponentify your technologies.  Exponentify business value.</span><br>
-        <br><h1 class="s-xxxlarge s-center">  GROW EXPONENTIALLY.</h1><br>
-<br><span class="s-xxlarge s-hide-large s-hide-medium"></span><br>
+    <br><span class="s-xxxlarge s-hide-small" ><br>Exponentify your technologies. Exponentify business value.</span><br>
+        <br><span class="s-xxxlarge">  GROW EXPONENTIALLY.</span><br>
+<br><span class="s-xlarge s-hide-large s-hide-medium"></span><br>
     <br><br><br><b><p><div class="s-jumbo"> </div></p><br>
-    <p><a href="#vision" class="s-button s-white s-padding-large s-large s-margin-top s-opacity s-hover-opacity-off">Learn how we get you there</a></p>
+    <p><a href="#vision" class="s-button s-white s-padding-large s-large s-margin-top s-opacity s-hover-opacity-off s-jumbo">Learn how we get you there</a></p>
   </div> 
   <div class="s-display-bottomleft s-text-grey s-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official s-hover-opacity"></i>
@@ -48,53 +108,50 @@
 
 <div class="s-container" style="padding:110px 16px" id="vision">
 
-  <h1 class="p-center s-text-skyblue">We make our clients vision a reality</h1><br>
-    <p class="s-xlarge p-center s-text-green">By developing competencies, driving change through digital transformation, nourishing adaptability, and advancing applied and emerging technologies, we help accomplish strategic goals.</p><br>
-  <p class="s-large p-center">In an era of rapidly transforming technologies, a firm strategy of survival, growth, positive customer experiences, and agility is important.  That is what we bring. Based in North America, Middle East, and Asia, 
-  we work with startups and big corporations to fill in gaps where they exist. Sometimes the lack of qualified professionals, global talent, not being able to scale as needed, or not having the right amount of time or funding to deliver can hold down company growth and success.
-  We open access to exponential growth by clearing these roadblocks and partnering with our clients to analyze weaknesses, strengths, improvements and scalibility.
-  Together, we think, plan, and create!</p>
+  <h2 class="p-center s-text-skyblue">We make our clients vision a reality</h2><br>
+    <h3 class="p-center s-text-green">By developing proficiencies, driving change through digital transformation while nourishing adaptibility, and advancing applied and emerging technologies we help accomplish strategic goals.</h3><br>
+  <h4 class="p-center">At Exponentify, we believe in executing ideas.  In an era of rapidly transforming technologies, we help build a firm strategy of survival, growth, positive customer experiences, and agility.  Together, we think, plan, and create. </h4>
   </div>
   <div class="s-row s-center">
     <div class="s-quarter">
       <p class="s-large">Discover</p>
       <img src="{% static 'discover.jpg' %}" alt="discover" style="width:70%" height="120">
-      <p class="s-small">Discover new possibilities and embrace change</p>
+      <p>Discover new possibilities and embrace change</p>
     </div>
     <div class="s-quarter">
       <p class="s-large">Design</p>
       <img src="{% static 'thinking.jpg' %}" alt="design" style="width:70%" height="120">
-      <p class="s-small">Design strategies and innovative solutions</p>
+      <p>Design strategies and innovative solutions</p>
     </div>
     <div class="s-quarter">
       <p class="s-large">Develop</p>
       <img src="{% static 'coding.jpg' %}" alt="develop" style="width:70%" height="120">
-      <p class="s-small">Develop agile processes and applications</p>
+      <p>Develop agile processes and applications</p>
     </div>
     <div class="s-quarter">
       <p class="s-large">Deliver</p>
       <img src="{% static 'Results.jpg' %}" alt="deliver" style="width:70%" height="120">
-      <p class="s-small">Deliver enhancements to invest in growth</p>
+      <p>Deliver enhancements to invest in growth</p>
       </div>
 
  </div>
  
 
 <!-- SERVICES -->
-<div class="s-container" style="padding:128px 16px" id="service">
+<div class="s-container s-light-grey" style="padding:128px 16px" id="service">
 <div class="s-center">
-      <P><img class="s-round-large" src="{% static 'globepointers.jpg' %}" alt="global" width="85%" height="350"></p>
-        <h3 class="s-center s-text-green p-center"><br>We work with organzations around the world to deliver digital solutions that enable growth and productivity. </h3><br>
-      <p class="s-large s-center"><br>Explore our core competencies:</p><br><br>
+      <P><img class="s-round-large" src="{% static 'globepointers.jpg' %}" alt="global" width="70%" height="300"></p>
+        <h3 class="s-center s-text-green p-center"><br>We work with organzations around the world to deliver digital solutions that enable growth and productivity. </h3<br>
+      <h3><br>Explore our core competencies:</h3><br><br>
       <div class="s-half s-left">
-      <p><a href="#agile" class="s-button s-skyblue s-medium" style="height:40px;width:300px">Digital Transformation</a></p>
-      <p><a href="#bus" class="s-button s-skyblue s-medium" style="height:40px;width:300px">Business Processes</a></p>
-      <p><a href="#sysapp" class="s-button s-skyblue s-medium" style="height:40px;width:300px">Applications & Architecture</a></p>
+      <p><a href="#agile" class="s-button s-skyblue s-large" style="height:30px;width:250px">Digital Transformation</a></p>
+      <p><a href="#bus" class="s-button s-skyblue s-large" style="height:30px;width:250px">Business Process Management</a></p>
+      <p><a href="#sysapp" class="s-button s-skyblue s-large" style="height:30px;width:250px">Applications & Architecture</a></p>
     </div>
     <div class="s-half s-right">
-      <p><a href="#analytic" class="s-button s-skyblue s-medium" style="height:40px;width:300px">AI & Analytics</a></p>
-      <p><a href="#cloud" class="s-button s-skyblue s-medium" style="height:40px;width:300px">Cloud & Infrastructure</a></p>
-      <p><a href="#sec" class="s-button s-skyblue s-medium" style="height:40px;width:300px">Cybersecurity</a></p>
+      <p><a href="#analytic" class="s-button s-skyblue s-large" style="height:30px;width:250px">AI & Analytics</a></p>
+      <p><a href="#cloud" class="s-button s-skyblue s-large" style="height:30px;width:250px">Cloud & Infrastructure</a></p>
+      <p><a href="#sec" class="s-button s-skyblue s-large" style="height:30px;width:250px">Cybersecurity</a></p>
     </div>
 
     </div>
@@ -106,7 +163,7 @@
 <!-- INDUSTRIES -->
 <div class="s-container" style="padding:128px 16px" id="industry">
   <h3 class="s-center p-center s-text-light-blue">Our skilled experts engage with organzations in various specializations to uncover insghts from data, processes, and services to improve quality and growth.</h3>
-  <br><p class="s-center s-large">Some industries we serve:</p>
+  <br><h4 class="s-center">Some industries we serve:</h4>
   <div class="s-grayscale p-center" style="margin-top:64px">
     <div class="s-col l3 m6 s-margin-bottom">
       <div class="s-card">
@@ -114,7 +171,7 @@
         <div class="s-container">
           <h3>Healthcare</h3>
           <p class="s-opacity">Transform care</p>
-          <br><p>Develop and integrate solutions across heathcare systems, applications, and business processes. </p>
+          <p>Develop and integrate solutions across heathcare systems, applications, and business processes. </p>
           <p><button class="s-button s-light-grey s-block"> ...</button></p>
         </div>
       </div>
@@ -125,7 +182,7 @@
         <div class="s-container">
           <h3>Financial</h3>
           <p class="s-opacity">Transform risk</p>
-          <br><p>Develop and integrate solutions across financial and banking systems, applications, and processes.</p>
+          <p>Develop and integrate solutions across financial and banking systems, applications, and processes.</p>
           <p><button class="s-button s-light-grey s-block">...</button></p>
         </div>
       </div>
@@ -136,7 +193,7 @@
         <div class="s-container">
           <h3>Energy</h3>
           <p class="s-opacity">Transform power</p>
-          <br><p>Develop and integrate solutions across exploration and production systems, applications, and processes.</p>
+          <p>Develop and integrate solutions across exploration and production systems, applications, and processes.</p>
           <p><button class="s-button s-light-grey s-block"> ...</button></p>
         </div>
       </div>
@@ -147,7 +204,7 @@
         <div class="s-container">
           <h3>Technology</h3>
           <p class="s-opacity">Transform digitally</p>
-          <br><p>Develop and integrate solutions across the enterprise by transforming applications and processes.</p>
+          <p>Develop and integrate solutions across the enterprise by transforming applications and processes.</p>
           <p><button class="s-button s-light-grey s-block"> ...</button></p>
         </div>
       </div>
@@ -156,11 +213,11 @@
 </div>
 
 <!--SERVICES DETAIL-->
-<div class="dt-b s-display-container" id="agile">
+<header class="dt-b s-display-container" id="agile">
   <div class="s-display-right s-text-white" style="padding:30px">
     <span class="s-xxlarge s-hide-small"><br>Evolve through Digital Transformation</span><br>
   </div>
-</div>
+</header>
 <div class="s-display-container" style="padding:128px 16px">
   <div class="s-row-padding">
     <div class="s-half">
@@ -269,7 +326,7 @@
   <div class="s-row-padding">
     <div class="s-half">
     <div class="s-xlarge s-text-greenr">Advance, innovate, transform</div>
-    <p class="s-large">Evolve business processes with field expertise, business management services, and process automation.<br<br> Our process analysts, operation specialists, and business development consultants help clients in: <br>
+    <p class="s-large">Evolve business processes with field expertise, business management services, and process automation.<br<br> Our process analysts, operation specialists, and business development consultants help clients procure experts in: <br>
     <br>Human resources<br>Supply management & manufacturing<br>Design, research, & development<br>Medical & Pharamcy practice <br>Finance & Accounting<br>Continuous improvement & Integration<br>Automation</p>
     </div>
 
@@ -305,8 +362,8 @@
     <br>UAE
   </div>
   <div class="s-col s2">
-    <span class="s-large s-text-greenr">Toronto</span>
-    <br>ON
+    <span class="s-large s-text-greenr">Calgary</span>
+    <br>AB
   </div>
 </div>
 
@@ -314,13 +371,29 @@
 
 <!-- About -->
 
-<div class="s-container" style="padding:128px 16px" id="about">
+<div class="s-container s-light-grey" style="padding:128px 16px" id="about">
 <div class="s-center">
-      <P><img class="s-round-large" src="{% static 'hback.jpg' %}" alt="houston" width="85%" height="350"></p>
-        <h3 class="s-center  p-center"><br>Exponentify is a global IT consulting and strategic resources company that focuses on client  growth through next generation technologies and digital services.</h3>
-        <br><p class="s-large p-center">Founded in Houston TX, we have locations in North America, Middle East, and Asia. This enables us to be global in our approach to challenges while also find the right support model for our clients.
-         Offering both onshore and offshore models, we provide affordable, better quality, strategic options for companies to make long term positive impacts on business and technology.  </p>
+      <P><img class="s-round-large" src="{% static 'hback.jpg' %}" alt="houston" width="70%" height="300"></p>
+        <h3 class="s-center s-text-greenr p-center"><br>Exponentify is a global IT consulting and professional resources services company that focuses on client success and growth.</h3<br>
+        <br><p class="s-large">Founded in Houston, TX </p>
 </div>
 </div>
 
-{% endblock %}
+
+
+<!-- Footer -->
+
+<div class="s-row s-green"><p class="s-medium s-right">© 2018 exponentify, all rights reserved</p></div>
+</footer>
+<footer class="s-center s-black s-padding-64">
+
+  <a href="#home" class="s-button s-skyblue">To the top</a>
+  <div class="s-xlarge s-section">
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
