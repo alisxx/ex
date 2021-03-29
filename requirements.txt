@@ -52,7 +52,7 @@ pycodestyle==2.3.1
 pyexcel==0.5.7
 pyexcel-io==0.5.6
 pyflakes==1.6.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.8.2
 pyodbc==4.0.22
 pyparsing==2.2.0
